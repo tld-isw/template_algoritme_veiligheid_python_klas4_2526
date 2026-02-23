@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent))
 
 
-from plus_solo.app import (
+from app import (
     genereer_salt,
     combineer_salt_en_wachtwoord,
     maak_salted_hash,
