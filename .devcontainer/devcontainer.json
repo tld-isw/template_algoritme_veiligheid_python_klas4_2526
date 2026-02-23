@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "Algoritme-veiligheid-python",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/universal:latest",
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+	},
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// install pygame && add settings for opening novnc terminal
+	"postCreateCommand": "",
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"extensions": [
+				"ms-vscode.livepreview", // add google-docs like typing in same file, click on live-share button in left icon pane
+				"mhutchie.git-graph", // add graphical viewer for branches and commits, click on button in Source-Code tab
+				"ms-python.python", // add common functionallity for python (syntax checking, autocomplete, debugging etc)
+				"esbenp.prettier-vscode",
+				"ms-python.vscode-pylance",
+                "-github.copilot-chat"
+            ],
+            "settings": {
+                "github.copilot.enable": { "*": false },
+                "github.chat.agent.enabled": false,
+                "github.copilot.chat.agent.autoFix": false,
+                "github.copilot.inlineSuggest.enable": false,
+                "chat.commandCenter.enabled": false,
+            }
+        }
+	}
+}

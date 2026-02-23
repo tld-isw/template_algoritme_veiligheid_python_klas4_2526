@@ -1,0 +1,74 @@
+[
+    {
+      "id": "E1",
+      "from": "noreply@odido.nl",
+      "subject": "Uw factuur van februari 2026",
+      "body": "Hallo Pien,\n\nDe nieuwe ffactuur voor je abbonement met mobiel nummer 0612390845 staat klaar. Het factuurbedrag is € 26,80. Klik op de knop hieronder om je factuur in mijn Odido te bekijken of ga naar de Odido App.\n\n[ Knop ]\n\nTip: Op odidio.nl/facturen geven wij uitleg over bijvoorbeeld extra kosten, hoe je kan betalen en beantwoorden we veelgestelde vragen.\n\nTot snel,\nOdido",
+      "links": [],
+      "attachments": [],
+      "expected": "SUSPICIOUS"
+    },
+    {
+      "id": "E2",
+      "from": "support@odido-beveiliging.com",
+      "subject": "DRINGEND: Uw account wordt geblokkeerd",
+      "body": "Beste gebruiker,\n\nEr is verdachte activiteit vastgesteld op uw account.\nKlik binnen 10 minuten op onderstaande link om uw gegevens te bevestigen:\nhttp://odido-login-verificatie.com/reset\nIndien u niet reageert wordt uw account permanent verwijderd.\n\nMet vriendelijke groet,\n\nICT Beveiliging Odido",
+      "links": ["http://odido-login-verificatie.com/reset"],
+      "attachments": [],
+      "expected": "PHISHING"
+    },
+    {
+      "id": "E3",
+      "from": "administratie@odido.nl",
+      "subject": "Herinnering openstaande declaratie",
+      "body": "Beste collega,\n\nJe declaratie van januari is nog niet goedgekeurd.\nBekijk de details via het interne portaal (intranet.odido.nl).\n\nMet vriendelijke groet,\n\nAdministratie",
+      "links": ["https://intranet.odido.nl"],
+      "attachments": [],
+      "expected": "SAFE"
+    },
+    {
+      "id": "E4",
+      "from": "microsoftsupport@security-check.com",
+      "subject": "Uw computer is geïnfecteerd",
+      "body": "Beste gebruiker,\n\nUw computer is geïnfecteerd met een ernstig virus.\n\nDownload direct de bijlage om het probleem te verhelpen.\n\nMet vriendelijke groet,\n\nMicrosoft Security Team",
+      "links": [],
+      "attachments": ["security_update.exe"],
+      "expected": "PHISHING"
+    },
+    {
+      "id": "E5",
+      "from": "noreply@ing.nl",
+      "subject": "Nieuwe voorwaarden per 1 maart",
+      "body": "Beste klant,\n\nPer 1 maart wijzigen onze algemene voorwaarden.\nLees de nieuwe voorwaarden via onze officiële website:\nhttps://www.ing.nl/voorwaarden\nDit bericht is automatisch verzonden.\n\nVriendelijke groet,\n\nING",
+      "links": ["https://www.ing.nl/voorwaarden"],
+      "attachments": [],
+      "expected": "SAFE"
+    },
+    {
+      "id": "E6",
+      "from": "track@postn1.nl",
+      "subject": "Uw pakket kon niet worden bezorgd",
+      "body": "Geachte heer/mevrouw,\n\nWij hebben geprobeerd uw pakket te bezorgen.\nBevestig uw adres via onderstaande link: https://postn1-track-service.com/controle\nNa 24 uur wordt het pakket retour gestuurd.",
+      "links": ["https://postn1-track-service.com/controle"],
+      "attachments": [],
+      "expected": "PHISHING"
+    },
+    {
+      "id": "E7",
+      "from": "hr@odido.nl",
+      "subject": "Bonusregeling 2026",
+      "body": "Beste collega,\n\nIn de bijlage vind je het overzicht van de bonusregeling voor 2026.\nBekijk het document via: https://intranet-odido.com/hr/bonusregeling\nLet op: dit document is vertrouwelijk.\n\nMet vriendelijke groet,\n\nHR-afdeling Odido",
+      "links": ["https://intranet-odido.com/hr/bonusregeling"],
+      "attachments": [],
+      "expected": "SUSPICIOUS"
+    },
+    {
+      "id": "E8",
+      "from": "klantenservice@odido-nl.nl",
+      "subject": "Wijziging in uw abonnement",
+      "body": "Beste klant,\n\nWij hebben een wijziging in uw abonnement doorgevoerd.\n\nBekijk de details via onderstaande link: https://odido-nl.nl/mijn-omgeving\n\nMet vriendelijke groet,\n\nOdido Team",
+      "links": ["https://odido-nl.nl/mijn-omgeving"],
+      "attachments": [],
+      "expected": "PHISHING"
+    }
+  ]

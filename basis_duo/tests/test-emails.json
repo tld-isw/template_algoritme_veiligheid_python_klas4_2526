@@ -1,0 +1,91 @@
+[
+    {
+      "id": "T1_safe_internal",
+      "from": "it-support@odido.nl",
+      "subject": "Wachtwoordbeleid update",
+      "body": "Beste collega,\n\nVanaf maandag geldt een nieuw wachtwoordbeleid. Lees het op intranet.odido.nl.\n\nMet vriendelijke groet,\nIT Support",
+      "links": ["https://intranet.odido.nl/wachtwoordbeleid"],
+      "attachments": [],
+      "expected": "SAFE"
+    },
+    {
+      "id": "T2_phish_typosquat_sender",
+      "from": "it-support@odid0.nl",
+      "subject": "Actie vereist: accountcontrole",
+      "body": "Beste collega,\n\nLog in om je account te bevestigen.\n\nMet vriendelijke groet,\nIT Support",
+      "links": ["https://odid0.nl/login"],
+      "attachments": [],
+      "expected": "PHISHING"
+    },
+    {
+      "id": "T3_suspicious_internalish_link",
+      "from": "hr@odido.nl",
+      "subject": "Personeelsportaal",
+      "body": "Beste collega,\n\nBekijk je gegevens via het personeelsportaal:\nhttps://intranet-odido.com/portal\n\nMet vriendelijke groet,\nHR",
+      "links": ["https://intranet-odido.com/portal"],
+      "attachments": [],
+      "expected": "SUSPICIOUS"
+    },
+    {
+      "id": "T4_phish_exe_uppercase",
+      "from": "security@microsoft.com",
+      "subject": "Security update",
+      "body": "Installeer de bijlage.",
+      "links": [],
+      "attachments": ["SecurityPatch.EXE"],
+      "expected": "PHISHING"
+    },
+    {
+      "id": "T5_safe_ing_www",
+      "from": "noreply@ing.nl",
+      "subject": "Controleer uw instellingen",
+      "body": "U kunt uw instellingen bekijken via:\nhttps://www.ing.nl/mijn-ing",
+      "links": ["https://www.ing.nl/mijn-ing"],
+      "attachments": [],
+      "expected": "SAFE"
+    },
+    {
+      "id": "T6_phish_postnl_mixed",
+      "from": "track@postnl.nl",
+      "subject": "Pakketstatus",
+      "body": "Bekijk de status:\nhttps://postnl.nl/track\nOf betaal douanekosten via:\nhttps://postn1-track-service.com/betaal",
+      "links": ["https://postnl.nl/track", "https://postn1-track-service.com/betaal"],
+      "attachments": [],
+      "expected": "PHISHING"
+    },
+    {
+      "id": "T7_suspicious_missing_links_field",
+      "from": "finance@odido.nl",
+      "subject": "Factuur bekijken",
+      "body": "Beste collega,\n\nDe factuur staat klaar. Ga naar odidio.nl/facturen.\n\nGroet,\nFinance",
+      "attachments": [],
+      "expected": "SUSPICIOUS"
+    },
+    {
+      "id": "T8_safe_no_links_no_attachments",
+      "from": "administratie@odido.nl",
+      "subject": "Roosterwijziging",
+      "body": "Beste collega,\n\nJe rooster is aangepast. Dit wordt morgen in het systeem bijgewerkt.\n\nMet vriendelijke groet,\nAdministratie",
+      "links": [],
+      "attachments": [],
+      "expected": "SAFE"
+    },
+    {
+      "id": "T9_phish_http_link",
+      "from": "support@odido.nl",
+      "subject": "DRINGEND: controleer je login",
+      "body": "Klik op de link om je login te bevestigen:\nhttp://odido-login-verificatie.com/reset",
+      "links": ["http://odido-login-verificatie.com/reset"],
+      "attachments": [],
+      "expected": "PHISHING"
+    },
+    {
+      "id": "T10_suspicious_uppercase_sender_domain",
+      "from": "HR@ODIDO.NL",
+      "subject": "Interne documenten",
+      "body": "Beste collega,\n\nBekijk interne documenten via intranet.odido.nl.\n\nGroet,\nHR",
+      "links": ["https://intranet.odido.nl/docs"],
+      "attachments": [],
+      "expected": "SAFE"
+    }
+  ]

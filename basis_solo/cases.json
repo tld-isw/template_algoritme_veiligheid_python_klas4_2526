@@ -1,0 +1,67 @@
+[
+  {
+    "id": "CASE-01",
+    "name": "Scholengroep Orion",
+    "summary": "Updates aan, MFA aan, back-ups dagelijks maar alleen online; geen incidentplan; training 1x per jaar; AV wel maar niet gemonitord.",
+    "features": {
+      "auto_updates": true,
+      "mfa": true,
+      "offline_backups": false,
+      "backups_tested": false,
+      "incident_plan": false,
+      "security_training": "yearly",
+      "network_segmentation": false,
+      "av_centrally_monitored": false
+    },
+    "expected": "MIDDEL"
+  },
+  {
+    "id": "CASE-02",
+    "name": "Zorginstelling VitaCare",
+    "summary": "Verouderde systemen; geen MFA; geen offline back-ups; geen segmentatie; gedrag risicovol; geen incidentplan.",
+    "features": {
+      "auto_updates": false,
+      "mfa": false,
+      "offline_backups": false,
+      "backups_tested": false,
+      "incident_plan": false,
+      "security_training": false,
+      "network_segmentation": false,
+      "unsupported_os": true
+    },
+    "expected": "HOOG"
+  },
+  {
+    "id": "CASE-03",
+    "name": "Gemeente Rivierenstad",
+    "summary": "Updates aan; MFA aan; offline back-ups + testen; incidentplan geoefend; segmentatie; training 2x per jaar; leveranciers hebben toegang.",
+    "features": {
+      "auto_updates": true,
+      "mfa": true,
+      "offline_backups": true,
+      "backups_tested": true,
+      "incident_plan": true,
+      "incident_plan_practiced": true,
+      "security_training": "twice_yearly",
+      "network_segmentation": true,
+      "third_party_access": true
+    },
+    "expected": "LAAG"
+  },
+  {
+    "id": "CASE-04",
+    "name": "Administratiekantoor Delta",
+    "summary": "Back-up op externe schijf maar blijft aangesloten; updates handmatig vaak uitgesteld; AV kan uit; geen MFA; incidentplan oud.",
+    "features": {
+      "auto_updates": false,
+      "mfa": false,
+      "offline_backups": false,
+      "backups_connected": true,
+      "backups_tested": false,
+      "av_user_can_disable": true,
+      "incident_plan": true,
+      "incident_plan_outdated": true
+    },
+    "expected": "HOOG"
+  }
+]
