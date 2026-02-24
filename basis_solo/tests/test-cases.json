@@ -1,28 +1,92 @@
 [
   {
-    "id": "CASE-01",
-    "name": "Scholengroep Orion",
-    "summary": "Updates aan, MFA aan, back-ups dagelijks maar alleen online; geen incidentplan; training 1x per jaar; AV wel maar niet gemonitord.",
+    "id": "CASE-05",
+    "name": "Marketingbureau BrightWave",
+    "summary": "Updates en MFA aan; offline back-ups aanwezig maar nooit getest; geen segmentatie; training jaarlijks.",
     "features": {
       "auto_updates": true,
       "mfa": true,
-      "offline_backups": false,
+      "offline_backups": true,
       "backups_tested": false,
-      "incident_plan": false,
+      "incident_plan": true,
       "security_training": "yearly",
       "network_segmentation": false,
-      "av_centrally_monitored": false
+      "unsupported_os": false
     },
     "expected": "MIDDEL"
   },
   {
-    "id": "CASE-02",
-    "name": "Zorginstelling VitaCare",
-    "summary": "Verouderde systemen; geen MFA; geen offline back-ups; geen segmentatie; gedrag risicovol; geen incidentplan.",
+    "id": "CASE-06",
+    "name": "Ziekenhuis MedicaPlus",
+    "summary": "Alles aanwezig; training twee keer per jaar; geen verouderde systemen.",
+    "features": {
+      "auto_updates": true,
+      "mfa": true,
+      "offline_backups": true,
+      "backups_tested": true,
+      "incident_plan": true,
+      "security_training": "twice_yearly",
+      "network_segmentation": true,
+      "unsupported_os": false
+    },
+    "expected": "LAAG"
+  },
+  {
+    "id": "CASE-07",
+    "name": "Transportbedrijf RoadCargo",
+    "summary": "Geen MFA; geen offline back-ups; incidentplan ontbreekt; training ontbreekt.",
+    "features": {
+      "auto_updates": true,
+      "mfa": false,
+      "offline_backups": false,
+      "backups_tested": false,
+      "incident_plan": false,
+      "security_training": false,
+      "network_segmentation": false,
+      "unsupported_os": false
+    },
+    "expected": "HOOG"
+  },
+  {
+    "id": "CASE-08",
+    "name": "Basisschool De Toekomst",
+    "summary": "Offline back-ups aanwezig en getest; updates aan; geen MFA; geen segmentatie; training jaarlijks.",
+    "features": {
+      "auto_updates": true,
+      "mfa": false,
+      "offline_backups": true,
+      "backups_tested": true,
+      "incident_plan": false,
+      "security_training": "yearly",
+      "network_segmentation": false,
+      "unsupported_os": false
+    },
+    "expected": "MIDDEL"
+  },
+  {
+    "id": "CASE-09",
+    "name": "Architectenbureau UrbanLine",
+    "summary": "Alles goed ingericht behalve training slechts jaarlijks.",
+    "features": {
+      "auto_updates": true,
+      "mfa": true,
+      "offline_backups": true,
+      "backups_tested": true,
+      "incident_plan": true,
+      "security_training": "yearly",
+      "network_segmentation": true,
+      "unsupported_os": false
+    },
+    "expected": "LAAG"
+  },
+  {
+    "id": "CASE-10",
+    "name": "Industriebedrijf SteelCore",
+    "summary": "Verouderd OS; geen segmentatie; geen MFA; training ontbreekt.",
     "features": {
       "auto_updates": false,
       "mfa": false,
-      "offline_backups": false,
+      "offline_backups": true,
       "backups_tested": false,
       "incident_plan": false,
       "security_training": false,
@@ -32,35 +96,34 @@
     "expected": "HOOG"
   },
   {
-    "id": "CASE-03",
-    "name": "Gemeente Rivierenstad",
-    "summary": "Updates aan; MFA aan; offline back-ups + testen; incidentplan geoefend; segmentatie; training 2x per jaar; leveranciers hebben toegang.",
+    "id": "CASE-11",
+    "name": "Gemeente Zuidwaard",
+    "summary": "Sterke maatregelen; training twee keer per jaar; back-ups niet getest.",
     "features": {
       "auto_updates": true,
       "mfa": true,
       "offline_backups": true,
-      "backups_tested": true,
+      "backups_tested": false,
       "incident_plan": true,
-      "incident_plan_practiced": true,
       "security_training": "twice_yearly",
       "network_segmentation": true,
-      "third_party_access": true
+      "unsupported_os": false
     },
     "expected": "LAAG"
   },
   {
-    "id": "CASE-04",
-    "name": "Administratiekantoor Delta",
-    "summary": "Back-up op externe schijf maar blijft aangesloten; updates handmatig vaak uitgesteld; AV kan uit; geen MFA; incidentplan oud.",
+    "id": "CASE-12",
+    "name": "Webshop QuickDeals",
+    "summary": "Geen updates; geen MFA; geen back-ups; training ontbreekt; verouderd OS.",
     "features": {
       "auto_updates": false,
       "mfa": false,
       "offline_backups": false,
-      "backups_connected": true,
       "backups_tested": false,
-      "av_user_can_disable": true,
-      "incident_plan": true,
-      "incident_plan_outdated": true
+      "incident_plan": false,
+      "security_training": false,
+      "network_segmentation": false,
+      "unsupported_os": true
     },
     "expected": "HOOG"
   }
